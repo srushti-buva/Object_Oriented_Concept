@@ -1,28 +1,27 @@
-package com.tka.bank;
+package com.tka.employee;
 
 public class MainClass {
-	  public static void main(String[] args) {
+	 int empId;
+	    String empName;
+	    String department;
+	    double salary;
 
-	        Bank b1 = new Bank();
-
-	        b1.accountHolder = "Srushti";
-	        b1.accountNumber = 1234567890L;
-	        b1.balance = 50000;
-	        b1.bankName = "SBI";
-
-	        b1.display();
-
-	        System.out.println("----------------------");
-
-	        Bank b2 = new Bank();
-
-	        b2.accountHolder = "Priya";
-	        b2.accountNumber = 9876543210L;
-	        b2.balance = 75000;
-	        b2.bankName = "HDFC";
-
-	        b2.display();
+	    public void work() {
+	        System.out.println("Employee is working");
 	    }
-	}
 
+	    public void attendMeeting() {
+	        System.out.println("Employee is attending meeting");
+	    }
 
+	    public void display() {
+	        System.out.println("Employee ID --> " + empId);
+	        System.out.println("Employee Name --> " + empName);
+	        System.out.println("Department --> " + department);
+	        System.out.println("Salary --> " + salary);
+
+	        work();
+	        attendMeeting();
+	    }
+
+}

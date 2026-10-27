@@ -1,14 +1,14 @@
-package aaaa;
+package bbbb;
 
 public class Test {
 	public static void main(String[] args) {
-		Person person = new Person();
-		Demographic gg = person.getDetails(23,"ddd");
-		Location ll = gg.giveAddress();
-		String ttt = ll.getCityName();
-		System.out.println(ttt);
+		Country country = new Country();
+		State state = country.getState();
+		District district = state.getDistrict();
+		City city = district.getCity();
+		String village = city.getVillageName();
+		System.out.println(village);
 		
-	
 		
 		
 	}
